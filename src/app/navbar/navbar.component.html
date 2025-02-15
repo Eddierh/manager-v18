@@ -1,0 +1,42 @@
+<nav class="bg-white shadow-md fixed w-full z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <!-- Sección Izquierda: Logo y Botón Mobile (Opcional) -->
+        <div class="flex items-center md:hidden">
+          <!-- Botón para abrir/cerrar el menú lateral en móvil -->
+          <button (click)="toggleSidebar()" class="p-2 rounded-md text-gray-600 hover:bg-gray-100">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+  
+        <!-- Logo o Título -->
+        <div class="flex-shrink-0 flex items-center">
+          <span class="text-xl font-bold text-blue-600">Mi Proyecto</span>
+        </div>
+  
+        <!-- Sección Derecha: Menú y Perfil -->
+        <div class="flex items-center space-x-4">
+          <!-- Botones o Enlaces -->
+          <a href="#" class="text-gray-600 hover:text-blue-600 px-3 py-2">Notificaciones</a>
+          <a href="#" class="text-gray-600 hover:text-blue-600 px-3 py-2">Ayuda</a>
+  
+          <!-- Perfil de Usuario (Dropdown) -->
+          <div class="relative">
+            <button class="flex items-center text-gray-600 hover:text-blue-600">
+              <span class="mr-2">Usuario</span>
+              <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+              </svg>
+            </button>
+            <!-- Menú Desplegable (Opcional) -->
+            <div class="hidden absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1">
+              <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Perfil</a>
+              <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Cerrar Sesión</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
